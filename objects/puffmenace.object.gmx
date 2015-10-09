@@ -35,10 +35,11 @@ SPRITE_LEFT = puffmenace_left
 SPRITE_RIGHT = puffmenace_right
 MIN_SIZE = 1.1
 MAX_STARTING_SIZE = 2.2
-size_gain = .9
 
-//Override Vars for this REGULAR Shrimp
-hunger_gain = 8.0
+
+//Override Vars for this Puff Menace
+size_gain = .0012
+hunger_gain = 0.075
 type = "menace"
 
 //Initialize Random Vars

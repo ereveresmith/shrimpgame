@@ -35,10 +35,11 @@ SPRITE_LEFT = shrimp_left
 SPRITE_RIGHT = shrimp_right
 MIN_SIZE = 0.4
 MAX_STARTING_SIZE = 0.8
-size_gain = 0.4
+
 
 //Override Vars for this REGULAR Shrimp
-hunger_gain = 2.0
+hunger_gain = 0.015
+size_gain = 0.0055
 type = "Regular"
 
 //Initialize Random Vars

@@ -19,6 +19,8 @@
     <sprite>sprites\puffmenace_right</sprite>
     <sprite>sprites\puffmenace_left</sprite>
     <sprite>sprites\spr_kelp_tree</sprite>
+    <sprite>sprites\spr_green_food</sprite>
+    <sprite>sprites\spri_red_food</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -26,9 +28,14 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\bubble</object>
     <object>objects\kelp_tree</object>
     <object>objects\main_controller</object>
-    <object>objects\bubble</object>
+    <objects name="food">
+      <object>objects\food_source</object>
+      <object>objects\food_pill</object>
+      <object>objects\food_pill_green</object>
+    </objects>
     <objects name="creatures">
       <object>objects\creature</object>
       <objects name="pufferfish">
@@ -41,10 +48,9 @@
         <object>objects\butt_shrimp</object>
       </objects>
     </objects>
-    <object>objects\object9</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\main_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

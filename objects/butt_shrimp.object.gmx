@@ -35,11 +35,12 @@ SPRITE_LEFT = buttshrimp_left
 SPRITE_RIGHT = buttshrimp_right
 MIN_SIZE = 0.9
 MAX_STARTING_SIZE = 1.3
-size_gain = 0.1
+
 
 
 //Override Vars for this REGULAR Shrimp
-hunger_gain = 4.0
+hunger_gain = 0.08
+size_gain = 0.003
 type = "Butt"
 
 //Initialize Random Vars

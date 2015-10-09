@@ -31,9 +31,7 @@
 MIN_SPEED = 0 //Swim speed
 MAX_H_SPEED = 2
 MAX_V_SPEED = 1
-MAX_HUNGER_GAIN = 5.0 
 species = "Puffer"
-hunger_gain = 1.0
 age = 1
 blood_type = 0
 my_h_speed = 0.5
@@ -47,6 +45,7 @@ emotional_state = "neutral"
 //Starting Motion
 hspeed = 0
 vspeed = 0
+current_hunger = 1
 
 </string>
           </argument>
@@ -73,93 +72,6 @@ vspeed = 0
           <argument>
             <kind>4</kind>
             <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>30</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>30</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>second = second + 1
-if(second &gt;= 10)
-{
-    second = 0
-    month = month + 1
-
-    if(month &gt; MONTH_MAX)
-    {
-        month = MONTH_MIN
-        year = year + 1
-        age = age + 1
-        image_xscale = size
-        image_yscale = size
-        size = size + (size_gain) + random_range(0,0.04)
-    }
-}
-        
-</string>
           </argument>
         </arguments>
       </action>
